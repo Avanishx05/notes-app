@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./config/db.js");
+const noteRoutes = require("./routes/noteRoutes.js");
 
 // Initialize Express app
 const app = express();
@@ -9,18 +10,13 @@ const app = express();
 connectDB();
 
 // 2. Mount Middleware
-// Explicitly permit cross-origin requests from the Vite dev server
 app.use(cors({
   origin: "http://localhost:5173"
 }));
-
-// Parse incoming request payloads with JSON payloads
 app.use(express.json());
 
-// 3. Mount Routes (Placeholder for Step 3)
-app.get("/", (req, res) => {
-  res.send("Notes API is running...");
-});
+// 3. Mount Routes
+app.use("/api/notes", noteRoutes);
 
 // 4. Start Server
 const PORT = process.env.PORT || 5000;
