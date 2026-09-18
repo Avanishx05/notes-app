@@ -3,9 +3,9 @@
 A full-stack MERN (MongoDB, Express, React, Node.js) application for managing student notes.
 
 ## Candidate Details
-- **Name:** [Your Name]
-- **Student ID:** [Your Student ID]
-- **GitHub Repository:** [Link to your repo]
+- **Name:** Avanish Grampurohit
+- **Student ID:** 2026201065
+- **GitHub Repository:** https://github.com/Avanishx05/notes-app
 
 ## Prerequisites
 - Node.js installed (v16+)
