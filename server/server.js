@@ -19,7 +19,7 @@ app.use(express.json());
 app.use("/api/notes", noteRoutes);
 
 // 4. Start Server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log(`Express server running on port ${PORT}`);
 });
